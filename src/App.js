@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./component/Navbar";
+import Navbar from "./screen/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Navbar></Navbar>
       <Switch>
-        <Route path="/" exact></Route>
+        <Route path="/" exact ></Route>
       </Switch>
     </Router>
   );
