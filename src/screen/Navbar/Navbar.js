@@ -11,9 +11,14 @@ const Navbar = () => {
   return (
       <>
         <div className="navlink-container">
-            <NavLink to='/' className="navlink">TÀI KHOẢN</NavLink>
+            <nav >
+                <Link to="/Home" exact className="pets-shop">PETS SHOP</Link>
+            </nav>
+            <div className="container1">
+            <div><NavLink to='/' className="profile">TÀI KHOẢN</NavLink></div>
             <NavLink to='/' className="navlink">ĐĂNG NHẬP</NavLink>
             <NavLink to='/' className="navlink">ĐĂNG KÍ</NavLink>
+            </div>
         </div>
         <nav className="navbar">
             <div className="navbar-container">
@@ -31,8 +36,8 @@ const Navbar = () => {
             
         </Switch> */}
         <Switch className="navbar-content">
-            <Route path="/Home/Home.js" exact><Home/></Route>
-            <Route path="/Service/Service.js"><Service/></Route>
+            <Route path="/Home" exact><Home/></Route>
+            <Route path="/Service"><Service/></Route>
         </Switch>
 
       </>

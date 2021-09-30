@@ -2,12 +2,12 @@
 const data = [
     {
         name: "TRANG CHỦ",
-        link: "/Home/Home.js",
+        link: "/Home",
         exact: "true",
     },
     {
         name: "DỊCH VỤ",
-        link: "/Service/Service.js",
+        link: "/Service",
         exact: "false",
     },
     {
