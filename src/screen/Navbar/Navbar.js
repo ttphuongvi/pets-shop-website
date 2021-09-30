@@ -10,17 +10,12 @@ import Service from "../Service/Service";
 const Navbar = () => {
   return (
       <>
-        <div className="navlink-container">
+      <section className="navlink-container">
+        
             <nav >
                 <Link to="/Home" exact className="pets-shop">PETS SHOP</Link>
             </nav>
-            <div className="container1">
-            <div><NavLink to='/' className="profile">TÀI KHOẢN</NavLink></div>
-            <NavLink to='/' className="navlink">ĐĂNG NHẬP</NavLink>
-            <NavLink to='/' className="navlink">ĐĂNG KÍ</NavLink>
-            </div>
-        </div>
-        <nav className="navbar">
+            <nav className="navbar">
             <div className="navbar-container">
                 {data.map((value) => 
                     <Link to={value.link} exact={value.exact} className="navbar-name">
@@ -28,18 +23,29 @@ const Navbar = () => {
                     </Link>
                 )}
             </div>
-        </nav> 
+            </nav> 
+            
+        
+            <div className="container1">
+            <div><NavLink to='/' className="profile">TÀI KHOẢN</NavLink></div>
+            <NavLink to='/' className="navlink">ĐĂNG NHẬP</NavLink>
+            <NavLink to='/' className="navlink">ĐĂNG KÍ</NavLink>
+            </div>
+       
+        
         {/* <Switch>
             {data.map((value) => 
                 <Route path= {value.link} exact={value.exact} component={value.component}></Route>
             )}
             
         </Switch> */}
-        <Switch className="navbar-content">
+        
+
+      </section>
+      <Switch className="navbar-content">
             <Route path="/Home" exact><Home/></Route>
             <Route path="/Service"><Service/></Route>
         </Switch>
-
       </>
   );
 }
