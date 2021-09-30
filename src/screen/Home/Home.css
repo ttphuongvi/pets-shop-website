@@ -5,46 +5,14 @@
     margin-top: 100px;
 }
 
-.title .title-icon {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
-.title .title-icon::before {
-    content: ':::::::';
-    color: black;
-    left: 0px;
-    top: 0px;
-    /* position: absolute; */
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-right: 5px;
-}
-
-.title .title-icon::after {
-    content: ':::::::';
-    color: black;
-    right: 0px;
-    top: 0px;
-    /* position: absolute; */
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 5px;
-}
-
-.feet-dog {
-    width: 35px;
-    height: 20px;
-}
 
 /* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Paytone+One&display=swap');
 
 h2 {
     font-family: 'Paytone One', sans-serif;
+    font-size: 40px;
     font-weight: 900;
     text-align: center;
 }
@@ -56,6 +24,10 @@ h2 {
     text-align: center;
 }
 
+.sec1 {
+    background-image: url(../../img/3.png);
+}
+
 .view-service {
     display: flex;
     flex-direction: row;
@@ -65,9 +37,37 @@ h2 {
 
 .link-service {
     text-decoration: none;
-    color: black;
-    background-color: #E5A62D;
+    color: #fff;
+    background-color: #082032;
     padding: 20px;
     border-radius: 30px;
     font-weight: 900;
+}
+
+.sec2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 60px 0px 60px 0px;
+    background-color: #F2E1C1;
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 25%;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 10px 10px 14px 4px rgba(0, 0, 0, 0.2), 10px 12px 26px 4px rgba(0, 0, 0, 0.19);
+}
+
+.icon {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+h5 {
+    font-weight: bold;
 }

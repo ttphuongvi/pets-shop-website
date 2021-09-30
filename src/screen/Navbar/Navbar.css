@@ -71,13 +71,8 @@
 }
 
 .navbar-name:hover {
-    color: #E7470C;
-    background-color: #fff;
-    padding: 45px 0px 45px 0px;
-}
+    color: #FFF338;
 
-.navbar-name:active {
-    color: #E5A62D;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Beastly&display=swap');

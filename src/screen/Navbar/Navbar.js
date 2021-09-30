@@ -18,9 +18,10 @@ const Navbar = () => {
             <nav className="navbar">
             <div className="navbar-container">
                 {data.map((value) => 
-                    <Link to={value.link} exact={value.exact} className="navbar-name">
+                    <NavLink to={value.link} exact={value.exact} className="navbar-name"  
+                    activeStyle={{fontWeight: "900",color: "#FFF338"}}>
                     {value.name}
-                    </Link>
+                    </NavLink>
                 )}
             </div>
             </nav> 
