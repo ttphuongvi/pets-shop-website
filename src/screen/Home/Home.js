@@ -8,16 +8,12 @@ import dog from '../../img/icons8-dog-60.png'
 import cat from '../../img/icons8-black-cat-60.png'
 import foot from '../../img/icons8-cat-footprint-100.png'
 import Icon from '../../component/Icon/iconDog';
-import Cut from '../../img/chai-long.png';
-import Nhannuoi from '../../img/nhan-nuoi.png';
-import Tiem from '../../img/tiem.png';
-import Huanluyen from '../../img/huan-luyen.png';
-
+import Service1 from "../Service/serviceSimple/serviceSimple";
+import Contact from '../../component/Contact/Contact1/Contact1';
 const Home = () => {
     return(
         <>
           <img src={ima} alt="img" className="img-home"></img>
-
           <section className="sec1">
            <div className="title">
             <Icon/>
@@ -34,7 +30,6 @@ const Home = () => {
             </div>
            </div>
           </section>
-
           <section className="sec2">
             <div className="cart">
               <img src={dog} alt="icon" className="icon"></img>
@@ -58,40 +53,15 @@ const Home = () => {
               </div>
             </div>
           </section>
-          
           <section className="sec3">
+            <Icon/>
+            <h2>Các dịch vụ của Pets Shop</h2>
+            <Service1></Service1>
+          </section>
           <Icon/>
-          <h2>Các dịch vụ của Pets Shop</h2>
-          <div className="section-service">
-            <Link className="cart-2">
-            <img src={Cut} alt="icon" className="icon"></img>
-              <div>
-                <h3>Chải lông cho thú cưng</h3>
-                <p>Spa và Massage trong lúc tắm, giúp thú thú cưng thư giãn. Sấy kết hợp chải chải lông để loại bỏ lớp lông thừa bám trên thú cưng. Chải lông tạo kiểu theo yêu cầu. </p>
-              </div>
-            </Link>
-            <Link className="cart-2">
-            <img src={Nhannuoi} alt="icon" className="icon"></img>
-              <div>
-                <h3>Nhận nuôi thú cưng</h3>
-                <p>Pets Shop hỗ trợ kết nối người cho và người nhận. Pets Shop có thể yêu càu bạn một ít kinh phí nếu lưu lại chó mèo tại Pets Shop để chờ người nhận nuôi. Kinh phí này dùng chi phí thức ăn cho những ngày đầu tiên tiếp nhận. </p>
-              </div>
-            </Link>
-            <Link className="cart-2">
-            <img src={Huanluyen} alt="icon" className="icon"></img>
-              <div>
-                <h3>Huấn luyện cho thú cưng</h3>
-                <p>Dạy chó ngừng sủa khi gặp người lạ, dạy thú cưng đi vệ sinh đúng cách,...</p>
-              </div>
-            </Link>
-            <Link className="cart-2">
-            <img src={Tiem} alt="icon" className="icon"></img>
-              <div>
-                <h3>Tiêm ngừa cho thú cưng</h3>
-                <p>Tiêm ngừa là cách tốt nhất để thú cưng của bạn chôngs được bệnh nguy hiểm, bệnh truyền nhiễm. Từ đó đó tránh dược thiệt hại về kinh tế của bạn cũng cũngnhuw tính mạng của thú cưng</p>
-              </div>
-            </Link>
-          </div>
+          <section className="sec4">
+            <h2>Liên hệ Pets Shop với tư cách Khách</h2>
+            <Contact/>
           </section>
         </>
         

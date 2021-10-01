@@ -1,0 +1,18 @@
+.form-contact {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-contact .input {
+    display: block;
+    width: 25%;
+    height: 50px;
+    font-size: 14px;
+    color: #848484;
+    line-height: 28px;
+    padding: 10px 25px;
+    font-weight: 400;
+    background: #ffffff;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+}
